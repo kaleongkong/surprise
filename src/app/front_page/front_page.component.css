@@ -1,0 +1,73 @@
+.passcode{
+	position: relative;
+	font-size: 80px;
+	top: -80px;
+	left: -500px;
+	text-shadow: 5px 5px gray;
+}
+
+.box {
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: gray;
+	margin: 10px;
+	text-align: center;
+	font-size: 100px;
+	color: white;
+}
+
+.box-container {
+	position: relative;
+	height: 120px;
+	width: 960px;
+	top: -60px;
+	left: -480px;
+}
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 10px;
+}
+
+.wording {
+	position: relative;
+	height: 120px;
+	width: 1050px;
+	top: -320px;
+	left: -520px;
+	font-size: 110px;
+	text-shadow: 5px 5px gray;
+}
+
+.photo {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	top: -560px;
+	left: -360px;
+}
+
+img {
+	transform: scale(0.5);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

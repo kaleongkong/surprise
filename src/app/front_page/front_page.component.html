@@ -1,0 +1,26 @@
+<div class='wrapper'>
+	<div *ngIf="!this.switchOn" class="passcode"><b>PASSCODE:</b></div>
+	<div *ngIf="!this.switchOn" class='box-container'>
+		<div class='box' style='left:0;'>{{this.keys[0]}}</div>
+		<div class='box' style='left:120px;'>{{this.keys[1]}}</div>
+		<div class='box' style='left:240px;'>{{this.keys[2]}}</div>
+		<div class='box' style='left:360px;'>{{this.keys[3]}}</div>
+		<div class='box' style='left:480px;'>{{this.keys[4]}}</div>
+		<div class='box' style='left:600px;'>{{this.keys[5]}}</div>
+		<div class='box' style='left:720px;'>{{this.keys[6]}}</div>
+		<div class='box' style='left:840px;'>{{this.keys[7]}}</div>
+	</div>
+	<div *ngIf="this.switchOn" class='wording'>
+		<b><i>HAPPY BIRTHDAY!!</i></b>
+	</div>
+	<img class='fade' src="a.jpg">
+	<div *ngIf="this.switchOn" class='photo'>
+		<img *ngIf="this.imageIdx === 0" class='fade' src='{{this.images[0]}}'>
+		<img *ngIf="this.imageIdx === 1" class='fade' src='{{this.images[1]}}'>
+		<img *ngIf="this.imageIdx === 2" class='fade' src='{{this.images[2]}}'>
+		<img *ngIf="this.imageIdx === 3" class='fade' src='{{this.images[3]}}'>
+		<img *ngIf="this.imageIdx === 4" class='fade' src='{{this.images[4]}}'>
+		<img *ngIf="this.imageIdx === 5" class='fade' src='{{this.images[5]}}'>
+		<img *ngIf="this.imageIdx === 6" class='fade' src='{{this.images[6]}}'>
+	</div>
+</div>
